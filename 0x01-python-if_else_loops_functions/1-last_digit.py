@@ -6,7 +6,7 @@ if number < 0:
     num = number % 10
     num *= -1
 else:
-    num number % 10
+    num = number % 10
 if number < 6 and number != 0:
     print(f"Last digit of {number:d} is {num} and is less than 6 and not 0")
 elif number > 5 and number != 0:
