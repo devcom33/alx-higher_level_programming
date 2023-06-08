@@ -11,7 +11,7 @@ def dyn_args():
     else:
         print("{} arguments:".format(len(sys.argv) - 1))
         for k in sys.argv[1:]:
-            print("{}: ".format(cnt, k))
+            print("{}: {}".format(cnt, k))
             cnt += 1
 if __name__ == "__main__":
     dyn_args()
