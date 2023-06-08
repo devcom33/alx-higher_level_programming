@@ -4,10 +4,10 @@ import sys
 def dyn_args():
     cnt = 1
     if len(sys.argv) == 1:
-        print("0 arguments.")
+        print("{} arguments.".format(0))
     elif len(sys.argv) == 2:
         print("{} argument:".format(len(sys.argv) - 1))
-        print("1: {}".format(sys.argv[1]))
+        print("{}: {}".format(1, sys.argv[1]))
     else:
         print("{} arguments:".format(len(sys.argv) - 1))
         for k in sys.argv[1:]:
