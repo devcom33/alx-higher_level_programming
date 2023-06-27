@@ -7,5 +7,3 @@ def uppercase(str):
             print("{:c}".format(chr(ord(i) - 32)), end='')
         else:
             print("{:c}".format(chr(ord(i) - 32)), end='')
-    print('')
-
