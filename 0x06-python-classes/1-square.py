@@ -4,6 +4,10 @@
 
 class Square:
     """A Square Class"""
-    __size
     __init__(self, size):
-        self.size = size
+        """init a square
+        Args:
+            size (int): size of square
+        Returns: None
+        """
+        self.__size = size
