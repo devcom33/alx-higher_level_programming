@@ -11,8 +11,8 @@ class Square:
             positin (tuple): pos of sq
         Returns: None
         """
-        self.size = size
-        self.position = position
+        self.__size = size
+        self.__position = position
 
     @property
     def size(self):
