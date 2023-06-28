@@ -18,6 +18,7 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+
     @property
     def size(self):
         """getter
@@ -56,4 +57,5 @@ class Square:
         else:
             for i in range(0, self.__size):
                 for j in range(0, self.__size):
-                    print('*', end='')
+                    print('#', end='')
+                print()
