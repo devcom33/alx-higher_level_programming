@@ -4,4 +4,4 @@
 
 def from_json_string(my_str):
     """returns an object"""
-    return my_str.loads()
+    return my_str.load()
