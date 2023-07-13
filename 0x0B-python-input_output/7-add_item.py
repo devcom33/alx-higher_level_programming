@@ -12,5 +12,3 @@ def main():
     c.append(args)
     save_to_json_file(c)
 
-if __name__ == '__main__':
-    main()
