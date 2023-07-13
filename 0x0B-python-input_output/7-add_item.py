@@ -8,7 +8,7 @@ from load_from_json_file import load_from_json_file
 def main():
     """adds all arguments to a Python list"""
     args = sys.argv[1:]
-    c = load_from_json_file(f)
+    c = load_from_json_file("add_item.json")
     c.append(args)
-    save_to_json_file(c)
+    save_to_json_file(c, "add_item.json")
 
