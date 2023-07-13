@@ -9,6 +9,6 @@ try:
 except FileNotFoundError:
     c = []
 
-for i in  sys.argv[1:]:
+for i in sys.argv[1:]:
     c.append(i)
 save_to_json_file(c, "add_item.json")
