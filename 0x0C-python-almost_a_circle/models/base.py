@@ -4,6 +4,7 @@
 
 class Base:
 	__nb_objects = 0
+
 	def __init__(self, id=None):
 		"""Construnctor init for assign id"""
 		if id is not None:
