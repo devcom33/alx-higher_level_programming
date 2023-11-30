@@ -8,19 +8,22 @@ def add_integer(a, b=98):
 
     """
         Add two integers
-        A function that takes two numbers, a and b returs sum
 
-        Usage:
-        >>> add_integer(4,7)
-        11
-        >>> add_integer(-2, 2)
-        0
+        Args:
+            a: the first parameter
+            b: the second parameter
+        
+        Raises:
+            TypeError: if a, b arent int or float
+
+        Returns:
+            Sum of two int
     """
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
     if type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
-    return a + b
+    return int(a) + int(b)
 
 
 if __name__ == "__main__":
