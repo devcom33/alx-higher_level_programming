@@ -16,8 +16,8 @@ Test basic:
 	100
 	>>> add_integer(103.3, -2)
 	98
-Test second args invalid:
 
+Test second args invalid:
 	>>> add_integer(4, "School")
     	Traceback (most recent call last):
             ...
