@@ -29,6 +29,19 @@ Test first args invalid:
             ...
 	a must be an integer
 
+Test both args invalid:
+
+	>>> add_integer(None, None)
+	Traceback (most racent call last):
+	    ...
+	a must be an integer
+
+Test two strings:
+	>>> add_integer("hey", "world")
+	Traceback (most recent call last):
+	    ...
+	a must be an integer
+
 Test float overflow:
 	>>> add_integer(float('inf'), 0):
 	Traceback (most recent call last):
