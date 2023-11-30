@@ -3,7 +3,9 @@
     A function that adds 2 integers
 """
 
+
 def add_integer(a, b=98):
+
     """
         Add two integers
         A function that takes two numbers, a and b returs sum
@@ -20,6 +22,8 @@ def add_integer(a, b=98):
         raise "b must be an integer"
     return a + b
 
+
 if __name__ == "__main__":
+
     import doctest
     doctest.testfile("tests/0-add_integer.txt")
