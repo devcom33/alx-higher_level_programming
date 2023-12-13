@@ -3,5 +3,12 @@
 
 
 def write_file(filename="", text=""):
+    """writes a string to a text file
+        Args:
+            filename: name of the file
+            text: content of the file
+        Returns:
+            the number of char
+    """
     with open(filename, 'a', encoding="utf-8"):
-        filename.write(text)
+        return filename.write(text)
