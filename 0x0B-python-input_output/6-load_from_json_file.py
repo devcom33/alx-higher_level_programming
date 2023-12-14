@@ -9,5 +9,5 @@ def load_from_json_file(filename):
             my_obj: object
             filename: name of the file
     """
-    with open(filename, 'r') as file:
+    with open(filename) as file:
         return json.loads(lines)
