@@ -6,8 +6,8 @@ import json
 def load_from_json_file(filename):
     """ loadfrom_json_file: create an Object from json file
         Args:
-            my_obj: object
+            filename: file
         Returns: String
     """
-    with open(filename) as file:
-        return json.loads(file)
+    with open(filename):
+        return json.loads(filename)
