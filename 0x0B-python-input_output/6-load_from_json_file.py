@@ -10,4 +10,4 @@ def load_from_json_file(filename):
         Returns: String
     """
     with open(filename) as file:
-        return json.loads(lines)
+        return json.loads(file)
