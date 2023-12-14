@@ -9,5 +9,5 @@ def load_from_json_file(filename):
             filename: file
         Returns: String
     """
-    with open(filename):
-        return json.loads(filename)
+    with open(filename) as file:
+        return json.load(file)
