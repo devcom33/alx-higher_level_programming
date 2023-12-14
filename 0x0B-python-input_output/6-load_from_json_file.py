@@ -7,7 +7,7 @@ def load_from_json_file(filename):
     """ loadfrom_json_file: create an Object from json file
         Args:
             my_obj: object
-            filename: name of the file
+        Returns: String
     """
     with open(filename) as file:
         return json.loads(lines)
