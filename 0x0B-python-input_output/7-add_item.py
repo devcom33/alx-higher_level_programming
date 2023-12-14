@@ -8,4 +8,4 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 lists = []
 for i in range(1, len(sys.argv)):
     lists.append(i)
-save_to_json_file(lists)
+save_to_json_file(lists, "add_item")
