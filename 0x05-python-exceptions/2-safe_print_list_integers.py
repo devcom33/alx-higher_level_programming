@@ -10,7 +10,7 @@ def safe_print_list_integers(my_list=[], x=0):
             if str(int(my_list[i])) == str(my_list[i]):
                 print("{:d}".format(my_list[i]), end="")
                 c += 1
-        except(IndexError, TypeError):
+        except(IndexError, TypeError, ValueError):
             break
     print("")
     return c
