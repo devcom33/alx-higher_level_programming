@@ -4,7 +4,8 @@
 
 def safe_print_integer(value):
     try:
-        print("{:d}".format(value))
+        if str(int(value)) == str(value):
+            print("{:d}".format(value))
     except ExceptionType:
         return False
     else:
