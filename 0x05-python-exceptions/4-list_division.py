@@ -4,7 +4,7 @@
 
 def list_division(my_list_1, my_list_2, list_length):
     newlist = []
-    for i, j in my_list_1, my_list_2:
+    for i, j in zip(my_list_1, my_list_2):
         try:
             div = i / j
         except TypeError:
