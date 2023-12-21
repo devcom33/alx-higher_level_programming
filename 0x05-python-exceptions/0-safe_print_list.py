@@ -4,7 +4,7 @@
 
 def safe_print_list(my_list=[], x=0):
     try:
-        if x == 0 or list_size(my_list, x) == 0:
+        if list_size(my_list, x) == 0:
             raise Exception
         print(int(''.join(map(str, my_list[:x]))), end='')
         print("")
