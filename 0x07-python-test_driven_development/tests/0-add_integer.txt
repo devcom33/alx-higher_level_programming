@@ -27,18 +27,22 @@ Test first args invalid:
             ...
 	TypeError: a must be an integer
 
+	>>> add_integer("School", 5)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
 Test both args invalid:
 
-	>>> add_integer(None, None)
+	>>> add_integer(2.2, None)
 	Traceback (most racent call last):
 	    ...
-	TypeError: a must be an integer
+	TypeError: b must be an integer
 
 Test two strings:
 	>>> add_integer("hey", "world")
 	Traceback (most recent call last):
 	    ...
-	a must be an integer
+	TypeError: a must be an integer
 
 Test float overflow:
 	>>> add_integer(float('inf'), 0):
