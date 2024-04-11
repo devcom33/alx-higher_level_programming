@@ -2,7 +2,7 @@
 """a script that lists all states from the database hbtn_0e_0_usa"""
 import MySQLdb, sys
 
-db = MySQLdb.connect(host="localhost:3306", sys.argv[1], sys.argv[2], sys.argv[3])
+db = MySQLdb.connect(host="localhost", port = 3306, sys.argv[1], sys.argv[2], sys.argv[3])
 
 cur = db.cursor()
 
