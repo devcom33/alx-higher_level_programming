@@ -10,8 +10,10 @@ def list_states(username, passwd, db):
     """
     db = MySQLdb.connect(host="localhost", port=3306, user=username, password=passwd, database=db)
     cur = db.cursor()
-    numrows = cur.execute("SELECT * from states")
-    print("Num Rows :", numrows)
+    numrows = cur.execute("SELECT * from states order by asc")
+    
+    for row in numrows:
+        print(row)
 
     cur.close()
 
