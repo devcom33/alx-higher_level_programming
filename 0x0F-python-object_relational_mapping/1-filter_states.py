@@ -15,7 +15,7 @@ def list_states_N(username, passwd, db):
             password=passwd,
             database=db)
     cur = db.cursor()
-    cur.execute("SELECT * from states LIKE %s ORDER BY states.id asc", ('N%',))
+    cur.execute("SELECT * from states WHERE LIKE %s ORDER BY states.id asc", ('N%',))
     states = cur.fetchall()
 
     for row in states:
