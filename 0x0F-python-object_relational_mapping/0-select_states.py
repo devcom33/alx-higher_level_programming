@@ -3,6 +3,7 @@
 import MySQLdb
 import sys
 
+
 def list_states(username, passwd, db):
     """
     Mysql Connection & lists all states
@@ -26,7 +27,7 @@ def list_states(username, passwd, db):
 if __name__ == "__main__":
     """check args len"""
     if (len(sys.argv)) != 4:
-            sys.exit(1)
+        sys.exit(1)
 
     username = sys.argv[1]
     passwd = sys.argv[2]
