@@ -8,7 +8,7 @@ def list_states(username, passwd, db):
     """
     Mysql Connection & lists all states
     """
-    db = MySQLdb.connect(host="localhost", port = 3306, username = username, password = passwd, database = db)
+    db = MySQLdb.connect(host="localhost", port=3306, user=username, password=passwd, database=db)
     cur = db.cursor()
     numrows = cur.execute("SELECT * from {}".format(db))
     print("Num Rows :", numrows)
