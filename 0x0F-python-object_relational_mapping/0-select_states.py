@@ -13,7 +13,7 @@ def list_states(username, passwd, db):
     numrows = cur.execute("SELECT * from states")
     print("Num Rows :", numrows)
 
-    cursor.close()
+    cur.close()
 
 if __name__ == "__main__":
     #check args len
