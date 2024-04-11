@@ -16,7 +16,8 @@ def list_states_N(username, passwd, db, name):
             database=db)
     cur = db.cursor()
     cur.execute("SELECT * from states\
-            WHERE name LIKE BINARY 'N%' AND states.name='{}' ORDER BY states.id asc".format(name))
+            WHERE name LIKE BINARY 'N%' AND states.name='{}'\
+            ORDER BY states.id asc".format(name))
     states = cur.fetchall()
 
     for row in states:
